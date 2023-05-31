@@ -1,0 +1,190 @@
+body{
+   margin: 0;
+   padding: 0;
+   background-color: #015cfe;
+   font-family: 'Roboto', sans-serif;
+
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.my-form {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: 10px;
+   width: 300px;
+   
+ }
+ 
+ .my-form .label-form {
+   color: #ffffff;
+   font-family: 'Roboto', sans-serif;
+   margin: 2px 0;
+   font-size: 16px;
+   font-weight: bold;
+ }
+ 
+ .my-form input[type="text"] {
+  caret-color: black;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  border-right-style: none;
+  border-left-style: none;
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #fdfcfc;
+  background-color: transparent;
+}
+.my-form input[type="text"]:focus {
+  outline: none;
+}
+
+  .my-form select {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  border-bottom-style: solid;
+  color: #ffffff;
+ }
+
+ .my-form .submit-button {
+   background-color: #2420a6;
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-weight: bold;
+ }
+ 
+ .my-form .submit-button:hover {
+   background-color: #5550f5;
+   cursor: pointer;
+ }
+ 
+ /* Estilo para campos colapsables */
+ .collapsible-content {
+   display: none;
+   padding: 10px;
+ }
+ 
+ .collapsible-trigger {
+   background-color: #2420a6;
+   color: #ffffff;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   cursor: pointer;
+ }
+ 
+ .collapsible-trigger:hover {
+   background-color: #5550f5;
+ }
+ 
+ .collapsible-content.show {
+   display: block;
+ }
+ 
+ /* Estilo para los botones de tipo de donación */
+ .donation-type-buttons {
+   display: flex;
+ }
+ 
+ .donation-type-buttons button {
+   flex: 1;
+   margin-right: 10px;
+ }
+
+ .container-num{
+   color: white;
+   display: flex;
+   gap: 12px;
+   margin: 15px 0;
+ }
+.container-num__labels{
+   font-size: 17px;
+}
+ .container-num__input1{
+   width: 85px;
+   height: 20;
+ }
+ .container-num__input2{
+  width: 138px;
+  height: 23px;
+  font-size: 16px;
+  color: white;
+  background-color: #015cfe;
+  border-right-style: none;
+  border-left-style: none;
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  border-radius: 6px;
+ }
+ .container-num__input2:focus{
+  outline: none;
+ }
+ .container-num__input2::placeholder{
+  color: white;
+  font-size: 16px;
+ }
+ .selected-div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .p-selected{
+   font-size: 16px;
+   color: white;
+   margin: 9px 0;
+ }
+
+@media (min-width:750px){
+  .container-prueba{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .container__tipo-donante{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 30px;
+  }
+/*   .my-form select{
+    width: 500px;
+  } */
+  .my-form{
+    width: 516px;
+  }
+  .label-form{
+    width: 120px;
+  }
+  .container-num{
+    gap:60px;
+  }
+  .container-num__input2{
+    width: 153px;
+    height: 30px;
+  }
+  .collapsible-trigger{
+    height: 50px;
+  }
+  .submit-button{
+    height: 50px;
+  }
+}
