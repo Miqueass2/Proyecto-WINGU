@@ -1,3 +1,4 @@
+
 body{
    margin: 0;
    padding: 0;
@@ -5,10 +6,13 @@ body{
    font-family: 'Roboto', sans-serif;
 
 }
+option{
+  background-color: #91afe2;
+}
 .container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .my-form {
    padding: 20px;
@@ -187,4 +191,199 @@ body{
   .submit-button{
     height: 50px;
   }
+  
 }
+/*esto animara y dara forma a las lineas para dibidir del header y el footer*/
+
+.divider-line {
+  position: relative;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.925);
+  margin: 20px 0;
+}
+
+.moving-circle {
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.925);
+  animation: moveCircle 10s linear infinite;
+
+}
+
+@keyframes moveCircle {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 20px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.container-num {
+  color: white;
+  display: flex;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.container-num__labels {
+  font-size: 17px;
+}
+
+.container-num__input1 {
+  width: 85px;
+  height: 20;
+}
+
+.container-num__input2 {
+  width: 138px;
+  height: 23px;
+  font-size: 16px;
+  color: white;
+  background-color: #015cfe;
+  border-right-style: none;
+  border-left-style: none;
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  border-radius: 6px;
+}
+
+.container-num__input2:focus {
+  outline: none;
+}
+
+.container-num__input2::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.selected-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-selected {
+  font-size: 16px;
+  color: white;
+  margin: 9px 0;
+}
+
+@media (min-width:750px) {
+  .container-prueba {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+  }
+
+  .container__tipo-donante {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     gap: 30px;
+  }
+
+  .my-form {
+     width: 516px;
+  }
+
+  .label-form {
+     width: 120px;
+  }
+
+  .container-num {
+     gap: 60px;
+  }
+
+  .container-num__input2 {
+     width: 153px;
+     height: 30px;
+  }
+
+  .collapsible-trigger {
+     height: 50px;
+  }
+
+  .submit-button {
+     height: 50px;
+  }
+}
+
+.divider-line {
+ position: relative;
+ height: 3px;
+ background-color: rgba(255, 255, 255, 0.925);
+ margin: 20px 0;
+}
+
+.moving-circle {
+ position: absolute;
+ top: -5px;
+ width: 20px;
+ height: 12px;
+ border-radius: 50%;
+ background-color: rgba(255, 255, 255, 0.925);
+ animation: moveCircle 10s linear infinite;
+}
+
+@keyframes moveCircle {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: calc(100% - 20px);
+ }
+ 100% {
+   left: 0;
+ }
+}
+nav{
+  padding-top: 120px;
+  padding-right: 20px;
+}
+nav{
+  display:flexbox ;
+  direction:rtl
+}
+a{
+  color:white ;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+text-shadow:  -1px -3px 3px #2420a6;
+  text-decoration: none;
+  
+  
+}
+.Bnav{ 
+box-shadow:  3px 3px 3px 2px #ffffff;
+display: inline;
+margin: 3px;
+padding: 4px;
+background-color: #015cfe;
+border-style: solid;
+border-radius: 10px 0px 10px 0px;
+border-width: 2px;
+
+border-color:#2420a6 ;
+
+}
+
+
+.logo{
+  z-index: 1000;
+ position: absolute;
+ padding: 15px;
+  
+  margin: 30px,10px;
+  width: 130px;
+  
+  border-radius: 1000px;
+  background: radial-gradient(closest-side,#5550f5,white,#015cfe);}

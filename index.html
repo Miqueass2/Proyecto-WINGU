@@ -1,95 +1,113 @@
-
-<script>
-
-</script>
-  <head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="./index.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <script src="./index.js" defer></script>
-  </head>
-
-<div class="container">
-
-  <form class="my-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-  <input type=hidden name="oid" value="00D8b0000031Nbf">
-  <input type=hidden name="retURL" value="https://winguweb.org/">
-  
-  <input type=hidden id="product_interest" name="product_interest" value="">
-  <div class="container-prueba">
-
-    <!-- <div class="container__tipo-donante"> -->
-      <label class="label-form" name="title" for="donor_type">Tipo de Donante</label>
-      <select id="donor_type" name="title" name="donor_type">
-        <option class="label-form" for="title" name="title" value="Individual">Individual</option>
-        <option class="label-form" for="title" name="title" value="Organización">Organización</option>
-        <option class="label-form" for="title" name="title" value="Empresa">Empresa</option>
-      </select>
-    </div>
-
-
-
-  
-    <div class="container__tipo-donante">
-      <label class="label-form" for="first_name">Nombre</label>
-      <input id="first_name" maxlength="40" name="first_name" type="text" />
-    </div>
-  
-  
-    <div class="container__tipo-donante">
-      <label class="label-form" for="last_name">Apellidos</label>
-      <input id="last_name" maxlength="80" name="last_name" type="text" />
-    </div>
-  
-<!-- </div> --> <!-- container prueba -->
-
-
-    <div class="container__tipo-donante">
-      <label class="label-form" for="email">Localidad</label>
-      <input id="email" maxlength="80" name="localidad" type="text" />
-    </div>
-
-    <div class="container__tipo-donante">
-      <label class="label-form" for="state">Provincia</label>
-      <input id="state" maxlength="20" name="state" size="20" type="text" />
-    </div>
-
-    <div class="container__tipo-donante">
-      <label class="label-form" for="email">Email</label>
-      <input id="email" maxlength="80" name="email" type="text" />
-    </div>
-
-    <div class="container__tipo-donante">
-      <div class="container-num">
-        <label class="container-num__labels" for="email">Número</label>
-        <input class="container-num__input2" for="phone" placeholder="011...." id="email" name="phone" type="number" />
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="./index.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <script src="./index.js" defer></script>
+   </head>
+   <Style>
+   </Style>
+   <body>
+      <header>
+         <!-- Aquí puedes agregar el código del encabezado, como el logo y las opciones básicas -->
+         <img class="logo" src="./images/logoVectorizado.png" alt="">
+         <nav>
+            <ul>
+               <div class="Bnav"><a  href="#">Inicio</a>
+              </div>
+              <div class="Bnav"><a  href="#">Campañas</a>
+            </div>
+            <div class="Bnav"><a  href="/Proyecto-WINGU/index.html">Donar</a>
+          </div> <div class="Bnav"><a  href="#">Contacto</a>
+        </div> </ul>
+         </nav>
+      </header>
+      <div class="divider-line">
+         <div class="moving-circle"></div>
       </div>
-    </div>
-  <!-- <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-  <label for="newsletter">Deseo recibir información sobre nuevas campañas y temas relacionados</label> -->
-
-  <div class="donation-type-buttons">
-    <button class="collapsible-trigger" id="submit-money" type="button">Donación Monetaria</button>
-    <button class="collapsible-trigger" id="submit-especie" type="button">Donación en Especie</button>
-    <button class="collapsible-trigger" id="submit-voluntary" type="button">Voluntariado</button>
+      <div class="container">
+         <form class="my-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type="hidden" name="oid" value="00D8b0000031Nbf">
+            <input type="hidden" name="retURL" value="https://winguweb.org/">
+            <input type="hidden" id="product_interest" name="product_interest" value="">
+            <div class="container__tipo-donante">
+               <label class="label-form" for="donor_type">Tipo de Donante</label>
+               <select id="donor_type" name="title" name="donor_type">
+                  <option class="label-form" for="title" name="title" value="Individual">Individual</option>
+                  <option class="label-form" for="title" name="title" value="Organización">Organización</option>
+                  <option class="label-form" for="title" name="title" value="Empresa">Empresa</option>
+               </select>
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="first_name">Nombre</label>
+               <input id="first_name" maxlength="40" name="first_name" type="text">
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="last_name">Apellidos</label>
+               <input id="last_name" maxlength="80" name="last_name" type="text">
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="email">Localidad</label>
+               <input id="email" maxlength="80" name="localidad" type="text">
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="state">Provincia</label>
+               <input id="state" maxlength="20" name="state" size="20" type="text">
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="email">Email</label>
+               <input id="email" maxlength="80" name="email" size="20" type="text">
+            </div>
+            <div class="container__tipo-donante">
+               <div class="container-num">
+                  <label class="container-num__labels" for="email">Número</label>
+                  <input class="container-num__input2" for="phone" placeholder="011...." id="email" name="phone" type="number" />
+               </div>
+            </div>
+            <div class="container__tipo-donante">
+               <div class="selected-div"></div>
+               <p class="p-selected"></p>
+            </div>
+            <div class="container__tipo-donante">
+               <label class="label-form" for="product">¿En qué te gustaría ayudar?</label>
+               <select id="product" name="product" onchange="selectChanged(this)">
+                  <option value="">--Seleccionar--</option>
+                  <option value="Donación Mensual">Donación Mensual</option>
+                  <option value="Donación Única">Donación Única</option>
+                  <option value="Donación por Campaña">Donación por Campaña</option>
+               </select>
+            </div>
+            <div id="collapsible-content" class="collapsible-content">
+               <div class="container__tipo-donante">
+                  <label class="label-form" for="collapsible-field">Monto de Donación</label>
+                  <input id="collapsible-field" type="number" name="amount" min="0" step="1">
+               </div>
+               <div class="container__tipo-donante">
+                  <label class="label-form" for="collapsible-field2">Otra Información</label>
+                  <textarea id="collapsible-field2" name="description"></textarea>
+               </div>
+            </div>
+            <button type="button" class="collapsible-trigger" onclick="toggleCollapsible()">Agregar más información</button>
+            <div class="container__tipo-donante">
+               <input class="submit-button" type="submit" name="submit" value="Enviar">
+            </div>
+         </form>
+      </div>
+      <div class="divider-line">
+         <div class="moving-circle"></div>
+      </div>
+      <footer>
+         <!-- Aquí puedes agregar el código del pie de página, como los enlaces sociales y la información de contacto -->
+         <div class="footer-container">
+            <div class="footer-section">
+              <p>En nuestra ONG, creemos en el poder de la solidaridad y el impacto que podemos generar juntos. Cada donación que recibimos nos acerca más a nuestros objetivos y nos permite llevar esperanza y transformación a aquellos que más lo necesitan.</p>
+    <p>Gracias por ser parte de nuestro movimiento. Tu generosidad contribuye a construir un mundo más justo, equitativo y lleno de oportunidades para todos. Juntos, podemos marcar la diferencia en la vida de las personas y crear un futuro mejor para las generaciones venideras.</p>
+    <p>Únete a nosotros y sé parte del cambio que deseas ver en el mundo. ¡Tu donación importa!</p>
   </div>
-  <div id="selected-div"></div>
-
-  <div class="container__tipo-donante">
-    <label class="label-form" for="company">Compañía</label>
-    <input id="company" maxlength="40" name="company" size="20" type="text" />
-  </div>
-
-  <div class="container__tipo-donante">
-    <label class="label-form" for="city">Ciudad</label>
-    <input id="city" maxlength="40" name="city" size="20" type="text" />
-  </div>
-
-  <input class="submit-button" type="submit" name="submit" value="Enviar">
-</form>
-
-</div>
+         </div>
+      </footer>
+   </body>
+</html>
