@@ -1,4 +1,4 @@
-  
+/*   
 (function main() { 
   const submitMoney = document.querySelector('#submit-money');
 
@@ -30,3 +30,4 @@
     selectedDiv.innerHTML = `<p class="p-selected">Seleccionaste Voluntariado</p>`;
   });
 })();  
+ */

@@ -8,21 +8,19 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
       <script src="./index.js" defer></script>
    </head>
-   <Style>
-   </Style>
    <body>
       <header>
          <!-- Aquí puedes agregar el código del encabezado, como el logo y las opciones básicas -->
          <img class="logo" src="./images/logoVectorizado.png" alt="">
          <nav>
             <ul>
-               <div class="Bnav"><a  href="#">Inicio</a>
+                <div class="button-container">
+                <button class="bnav">
+                  <a href="#">Inicio</a>
+                </button>
               </div>
-              <div class="Bnav"><a  href="#">Campañas</a>
-            </div>
-            <div class="Bnav"><a  href="/Proyecto-WINGU/index.html">Donar</a>
-          </div> <div class="Bnav"><a  href="#">Contacto</a>
-        </div> </ul>
+        </div> 
+      </ul>
          </nav>
       </header>
       <div class="divider-line">
@@ -80,19 +78,10 @@
                   <option value="Donación por Campaña">Donación por Campaña</option>
                </select>
             </div>
-            <div id="collapsible-content" class="collapsible-content">
-               <div class="container__tipo-donante">
-                  <label class="label-form" for="collapsible-field">Monto de Donación</label>
-                  <input id="collapsible-field" type="number" name="amount" min="0" step="1">
-               </div>
-               <div class="container__tipo-donante">
-                  <label class="label-form" for="collapsible-field2">Otra Información</label>
-                  <textarea id="collapsible-field2" name="description"></textarea>
-               </div>
-            </div>
-            <button type="button" class="collapsible-trigger" onclick="toggleCollapsible()">Agregar más información</button>
-            <div class="container__tipo-donante">
-               <input class="submit-button" type="submit" name="submit" value="Enviar">
+            <div class="container__tipo-donante button__send-contaier">
+              <button class="submit-button">
+                <a href="./thanks.html">Enviar</a>
+               </button>
             </div>
          </form>
       </div>
@@ -103,11 +92,9 @@
          <!-- Aquí puedes agregar el código del pie de página, como los enlaces sociales y la información de contacto -->
          <div class="footer-container">
             <div class="footer-section">
-              <p>En nuestra ONG, creemos en el poder de la solidaridad y el impacto que podemos generar juntos. Cada donación que recibimos nos acerca más a nuestros objetivos y nos permite llevar esperanza y transformación a aquellos que más lo necesitan.</p>
-    <p>Gracias por ser parte de nuestro movimiento. Tu generosidad contribuye a construir un mundo más justo, equitativo y lleno de oportunidades para todos. Juntos, podemos marcar la diferencia en la vida de las personas y crear un futuro mejor para las generaciones venideras.</p>
-    <p>Únete a nosotros y sé parte del cambio que deseas ver en el mundo. ¡Tu donación importa!</p>
-  </div>
-         </div>
+              <p class="footer-text">Únete a nosotros y sé parte del cambio que deseas ver en el mundo. ¡Tu donación importa!</p>
+            </div>
+        </div>
       </footer>
-   </body>
+  </body>
 </html>
