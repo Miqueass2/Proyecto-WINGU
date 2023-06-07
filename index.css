@@ -273,7 +273,9 @@ option{
 }
 .footer-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .footer-section{
   width: 250px;
@@ -282,6 +284,12 @@ option{
   color: white;
   font-size: 16px;
   margin: 8px 0px;
+}
+.footer-text-two{
+  color: white;
+  font-size: 16px;
+  margin: 4px 0;
+  width: 274px;
 }
 .p-selected {
   font-size: 16px;
@@ -432,7 +440,13 @@ text-shadow:  -1px -3px 3px #2420a6;
     width: 700px;
     }
 
+    .footer-container{
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
+
   .two{
     margin-bottom: 20px;
   }
