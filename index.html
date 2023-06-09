@@ -32,11 +32,11 @@
             <input type="hidden" name="retURL" value="https://winguweb.org/">
             <input type="hidden" id="product_interest" name="product_interest" value="">
             <div class="container__tipo-donante">
-               <label class="label-form" for="donor_type">Tipo de Donante</label>
-               <select id="donor_type" name="title" name="donor_type">
-                  <option class="label-form" for="title" name="title" value="Individual">Individual</option>
-                  <option class="label-form" for="title" name="title" value="Organización">Organización</option>
-                  <option class="label-form" for="title" name="title" value="Empresa">Empresa</option>
+               <label class="label-form" for="company">Tipo de Donante</label>
+               <select id="company" name="company" name="company">
+                  <option class="label-form" id="company" for="company" name="company" value="Individual">Individual</option>
+                  <option class="label-form" id="company" for="company" name="company" value="Organización">Organización</option>
+                  <option class="label-form" id="company" for="company" name="company" value="Empresa">Empresa</option>
                </select>
             </div>
             <div class="container__tipo-donante">
@@ -48,8 +48,8 @@
                <input id="last_name" maxlength="80" name="last_name" type="text">
             </div>
             <div class="container__tipo-donante">
-               <label class="label-form" for="email">Localidad</label>
-               <input id="email" maxlength="80" name="localidad" type="text">
+               <label for="city" class="label-form">Localidad</label>
+               <input id="city" maxlength="40" name="city" type="text">
             </div>
             <div class="container__tipo-donante">
                <label class="label-form" for="state">Provincia</label>
@@ -71,16 +71,21 @@
             </div>
             <div class="container__tipo-donante">
                <label class="label-form" for="product">¿En qué te gustaría ayudar?</label>
-               <select id="product" name="product" onchange="selectChanged(this)">
+               <select id="00N8b00000IEUI6"  name="00N8b00000IEUI6" title="Tipo de donación">
                   <option value="">--Seleccionar--</option>
-                  <option value="Donación Mensual">Donación Monetaria</option>
-                  <option value="Donación Única">Donaciones en Especie</option>
-                  <option value="Donación por Campaña">Voluntariado</option>
+                  <option value="Monetaria">Monetaria</option>
+                  <option value="En especies">En especies</option>
+                  <option value="Voluntariado">Voluntariado</option>
                </select>
             </div>
+            <input  id="title" maxlength="40" name="title" size="20" type="hidden" value="Oportunidad" />
+            <!-- aqui se agregaria el title en lead
+            <label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br> -->
+            <!-- aqui podria agregarse una Description breve -->
+            <!-- <label for="description">Description</label><textarea name="description"></textarea><br> -->
             <div class="container__tipo-donante button__send-contaier">
               <button class="submit-button">
-                <a href="./thanks.html">Enviar</a>
+                <a href="#">Enviar</a>
                </button>
             </div>
          </form>
