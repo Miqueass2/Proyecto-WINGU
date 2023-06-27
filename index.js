@@ -1,33 +1,26 @@
-/*   
-(function main() { 
-  const submitMoney = document.querySelector('#submit-money');
-
-  const submitEspecie = document.querySelector('#submit-especie');
-
-  const submitVoluntary = document.querySelector('#submit-voluntary');
-
-  const productInterest = document.querySelector('#product_interest');
   
+(function main() {
+  const isCompany = document.querySelector('#company');
   
-  submitMoney.addEventListener('click', (e) => {
-    e.preventDefault();
-    const selectedDiv = document.querySelector('#selected-div');
-    
-    productInterest.value = 'Donación Monetaria';
-    console.log("inputvalue::",productInterest.value);
-    selectedDiv.innerHTML = `<p class="p-selected">Seleccionaste Donación Monetaria</p>`;
+  const genderForm = document.querySelector('.container__gender');
+  isCompany.addEventListener('change', (e) => {
+    const value = e.target.value;
+    if (value == 'Individual') {
+      console.log(genderForm);
+      genderForm.innerHTML = `
+      
+        <label class="label-form" for="label-form">Genero:</label>
+          <select  id="00N8b00000IrTyi" name="00N8b00000IrTyi"><option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Binario">Binario</option>
+            <option value="No binario">No binario</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+          </select>
+      `
+    } else {
+      genderForm.innerHTML = ``;
+    }
+
   });
-  submitEspecie.addEventListener('click', (e) => {
-    e.preventDefault();
-    const selectedDiv = document.querySelector('#selected-div');
-    productInterest.value = 'Donación en Especie';
-    selectedDiv.innerHTML = `<p class="p-selected">Seleccionaste Donación en Especie</p>`;
-  });
-  submitVoluntary.addEventListener('click', (e) => {
-    e.preventDefault();
-    const selectedDiv = document.querySelector('#selected-div');
-    productInterest.value = 'Voluntariado';
-    selectedDiv.innerHTML = `<p class="p-selected">Seleccionaste Voluntariado</p>`;
-  });
+
 })();  
- */
